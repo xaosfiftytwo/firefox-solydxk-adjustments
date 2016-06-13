@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SQL='/etc/skel/.mozilla/firefox/mwad0hks.default/extensions.sqlite'
+if [ -f $SQL ]; then
+    rm -v $SQL 2>/dev/null
+fi
+
