@@ -1,0 +1,24 @@
+Source: firefox-solydxk-adjustments
+Section: web
+Priority: optional
+Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Build-Depends: debhelper (>= 9)
+  , python3 (>= 3.2)
+X-Python3-Version: >= 3.2
+Standards-Version: 3.9.6
+
+Package: firefox-solydxk-adjustments
+Architecture: all
+Depends: firefox | firefox-esr
+Replaces: firefox-esr-solydxk-adjustments (<< 2016.06.11)
+Breaks: firefox-esr-solydxk-adjustments (<< 2016.06.11)
+Description: Firefox adjustments for SolydXK
+
+Package: firefox-esr-solydxk-adjustments
+Architecture: all
+Section: oldlibs
+Depends: firefox-solydxk-adjustments, ${misc:Depends}
+Priority: extra
+Description: Firefox adjustments for SolydXK (transitional package)
+  This is a transitional dummy package for firefox-solydxk-adjustments.
+  It can safely be removed.
